@@ -1,0 +1,105 @@
+/* Mobile only hamburger menu */
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-inner-container {
+  width: 100%;
+}
+
+.toggle-button {
+  display: flex;
+}
+
+.navbar-links {
+  display: none;
+  width: 100%;
+}
+
+.navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar-links ul li {
+  text-align: center;
+}
+
+.navbar-links ul li a {
+  padding: 0.5rem 1rem;
+  margin-right: 0;
+}
+
+.logo-nav {
+  float: none;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  width: 15px;
+  height: 15px;
+}
+
+.navbar-links li a:hover {
+  border-radius: 0px;
+  background-color: #393939;
+}
+
+.navbar-links.active-nav {
+  position: absolute;
+  display: block;
+}
+/* Showcase */
+#showcase-container {
+  width: 450px;
+}
+
+/* Project */
+.project-container {
+  flex-direction: column;
+  width: 450px;
+}
+
+.project-inner-container {
+  width: 450px;
+}
+
+.technology-container {
+  width: 450px;
+}
+
+.project-info {
+  width: 450px;
+}
+
+.project-info-list {
+  width: 450px;
+}
+
+.button-section {
+  width: 450px;
+}
+
+/* Reference */
+.references-container {
+  height: 1200px;
+  width: 450px;
+}
+
+.references-container {
+  flex-direction: column;
+}
+
+/* About */
+.about-container {
+  width: 450px;
+}
+
+/* Contact */
+.contact-container {
+  width: 450px;
+}
+
+/* Footer */
+.footer-container {
+  width: 450px;
+}

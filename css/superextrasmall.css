@@ -1,0 +1,77 @@
+/* Showcase */
+#showcase-container {
+  width: 230px;
+}
+
+/* Project */
+.project-container {
+  flex-direction: column;
+  width: 230px;
+}
+
+.project-inner-container {
+  width: 230px;
+}
+
+.technology-container {
+  width: 260px;
+  height: 170px;
+}
+
+.project-info {
+  width: 230px;
+}
+
+.project-info-list {
+  width: 230px;
+  height: 550px;
+}
+
+.button-section {
+  width: 230px;
+}
+
+.project-button {
+  width: 100px;
+}
+
+/* Reference */
+.references-container {
+  height: 1450px;
+  width: 230px;
+}
+
+.references-container {
+  flex-direction: column;
+}
+
+.references-inner-container {
+  width: 250px;
+}
+
+.reference-position {
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+/* About */
+#about {
+  height: 550px;
+}
+
+.about-container {
+  width: 230px;
+}
+
+/* Contact */
+.contact-container {
+  width: 230px;
+}
+
+/* Footer */
+#footer {
+  height: 75px;
+}
+
+.footer-container {
+  width: 230px;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/1a7abe985c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/widescreen.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+  <link rel="stylesheet" media="screen and (max-width: 451px)" href="css/extrasmall.css" />
+  <link rel="stylesheet" media="screen and (max-width: 321px)" href="css/superextrasmall.css" />
+  <title>Portfolio syzygyexe</title>
+</head>
+
+<body id="home">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner-container">
+      <div class="brand-title"><a class="brand-fix" href="#home">syzygyexe</a></div>
+      <a href="javascript:void(0)" class="toggle-button">
+        <span class="bar left-slash"></span>
+        <span class="bar hide"></span>
+        <span class="bar right-slash"></span>
+      </a>
+      <div class="navbar-links">
+        <ul class="navbar-dropdown-open">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/syzygyexe" target="_blank">GitHub<img class="logo-nav" alt="git"
+                src="img/github.png" width="17" height="17"></a></li>
+          <li><a href="https://www.linkedin.com/in/alexander-borisov-305507201/" target="_blank">Linked<img
+                class="logo-nav" alt="in" src="img/linkedin.png" width="17" height="17"></a></li>
+          <li><a href="https://stackoverflow.com/users/13871107/alexander-borisov" target="_blank">SO<img
+                class="logo-nav" alt="in" src="img/stackoverflow.png" width="17" height="17"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Showcase -->
+  <header id="showcase">
+    <div id="showcase-container">
+      <div class="showcase-content">
+        <h1 class="l-heading">Alexander Borisov</h1>
+        <p class="lead">Web Developer</p>
+        <button onclick="window.open('pdf/resume.pdf');" class="btn">Resume(PDF)</button>
+      </div>
+    </div>
+  </header>
+  <!-- Projects -->
+  <section id="projects">
+    <h1>Projects:</h1>
+    <div class="project-container">
+      <div class="project-inner-container">
+        <h1 class="project-title">MERN E-commerce</h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images -->
+          <div class="mySlides fade">
+            <img src="img/test1.jpg" style="width: 100%" />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/test2.jpg" style="width: 100%" />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/test3.jpg" style="width: 100%" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="technology-container">
+          <h3 class="project-technologies-title">
+            <bold>Technologies used:</bold>
+          </h3>
+          <img src="img/html.png" width="52px" height="52px" />
+          <img src="img/css.png" width="44px" height="52px" />
+          <img src="img/js.png" width="56px" height="54px" />
+          <img src="img/mongodb.png" width="47px" height="47px" />
+          <img src="img/ex.png" width="48px" height="48px" />
+          <img src="img/react.webp" width="49px" height="49px" />
+          <img src="img/nodejs.png" width="50px" height="50px" />
+          <img src="img/react-bootstrap.png" width="52px" height="52px" />
+        </div>
+
+        <div class="project-info">
+          <ul class="project-info-list">
+            <h3>Project Info:</h3>
+            <p>E-commerce website powered by the MERN stack.</p>
+            <h3 class="project-info-title">Key Features:</h3>
+            <li>- Register / Log-in / Log-out</li>
+            <li>- Cart page(Edit current cart products/qty)</li>
+            <li>
+              - Personal account page(Edit personal info, check personal order
+              info/status)
+            </li>
+            <li>
+              - Admin pages(Edit product list/info. Append new product. Edit
+              user list/info/status. Edit order list/status)
+            </li>
+            <li>
+              - Product page with photo, name, description, rating, qty,
+              comment section
+            </li>
+            <li>- Carousel with top-rated products / Search Engine</li>
+            <li>- 4 different pages for checkout process</li>
+            <li>- Product purchase via PayPal API sandbox</li>
+          </ul>
+        </div>
+        <div class="button-section">
+          <button class="project-button">Demo</button>
+          <button class="project-button"
+            onclick="window.open('https://github.com/syzygyexe/E-commerce');">GitHub</button>
+        </div>
+      </div>
+
+      <div class="project-inner-container">
+        <h1 class="project-title">MERN Link-Shrinker</h1>
+        <!-- Slideshow container -->
+        <div></div>
+        <div class="slideshow-containerRight">
+          <!-- Full-width images -->
+          <div class="mySlidesRight fade">
+            <img src="img/test1.jpg" style="width: 100%" />
+            <div class="textRight">Caption Text</div>
+          </div>
+
+          <div class="mySlidesRight fade">
+            <img src="img/test2.jpg" style="width: 100%" />
+            <div class="textRight">Caption Two</div>
+          </div>
+
+          <div class="mySlidesRight fade">
+            <img src="img/test3.jpg" style="width: 100%" />
+            <div class="textRight">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prevRight" onclick="plusSlidesRight(-1)">&#10094;</a>
+          <a class="nextRight" onclick="plusSlidesRight(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dotRight" onclick="currentSlideRight(1)"></span>
+          <span class="dotRight" onclick="currentSlideRight(2)"></span>
+          <span class="dotRight" onclick="currentSlideRight(3)"></span>
+        </div>
+        <div class="technology-container">
+          <h3 class="project-technologies-title">
+            <bold>Technologies used:</bold>
+          </h3>
+          <img src="img/html.png" width="52px" height="52px" />
+          <img src="img/css.png" width="44px" height="52px" />
+          <img src="img/js.png" width="56px" height="54px" />
+          <img src="img/mongodb.png" width="47px" height="47px" />
+          <img src="img/ex.png" width="48px" height="48px" />
+          <img src="img/react.webp" width="49px" height="49px" />
+          <img src="img/nodejs.png" width="50px" height="50px" />
+        </div>
+        <div class="project-info">
+          <ul class="project-info-list">
+            <h3>Project Info:</h3>
+            <p>
+              Link Shrinker is a website powered by the MERN stack. Its goal
+              to transform bulky links into a concise and legible format.
+            </p>
+            <h3 class="project-info-title">Key Features:</h3>
+            <li>- Register / Log-in / Log-out</li>
+            <li>
+              - Transformation of bulky URL into a concise and legible format
+            </li>
+            <li>- Link click counter</li>
+          </ul>
+        </div>
+        <div class="button-section">
+          <button class="project-button">Demo</button>
+          <button class="project-button"
+            onclick="window.open('https://github.com/syzygyexe/Link-Shrinker');">GitHub</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- References -->
+  <section id="references">
+    <h1 class="references-title">References:</h1>
+    <div class="references-container">
+      <div class="references-inner-container">
+        <h3 class="reference-name">Sean Green</h3>
+        <h4 class="reference-position">
+          Instructor at Kanda Institute of Foreign Languages
+        </h4>
+        <br />
+        <h4 class="reference-contact">
+          Contact Information: <br />
+          <a class="email" href="mailto:green-s@kifl.ac.jp">green-s@kifl.ac.jp</a>
+        </h4>
+        <br />
+        <button class="reference-button" onclick="window.open('pdf/sean-ref.pdf');">Reference(PDF)</button>
+      </div>
+      <div class="references-inner-container">
+        <h3 class="reference-name">Sergey Fedotenkov</h3>
+        <h4 class="reference-position">
+          Logistics Specialist | Data Center Operations <br />
+          at Amazon Web Services Japan
+        </h4>
+        <h4 class="reference-contact">
+          Contact Information: <br />
+          <a class="email" href="mailto:fedotenk@amazon.co.jp">fedotenk@amazon.co.jp</a>
+        </h4>
+        <br />
+        <button class="reference-button" onclick="window.open('pdf/sergey-ref.pdf');">Reference(PDF)</button>
+      </div>
+      <div class="references-inner-container">
+        <h3 class="reference-name">Victor Dontsov</h3>
+        <h4 class="reference-position">3DCG Engineer at CyberAgent Inc.</h4>
+        <br />
+        <h4 class="reference-contact">
+          Contact Information: <br />
+          <a class="email" href="mailto:dontsov_victor@cyberagent.co.jp">dontsov_victor@cyberagent.co.jp</a>
+        </h4>
+        <br />
+        <button class="reference-button" onclick="window.open('pdf/victor-ref.pdf');">Reference(PDF)</button>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about">
+    <h1>About Me:</h1>
+    <br />
+    <div class="about-container">
+      <div class="about-inner-container">
+        <p class="about-me">
+          My name is Alexander Borisov. I am ambitious and driven. I thrive on challenges and constantly set goals for
+          myself. A vivid proof of my nature is the fact that I speak 4 languages
+          and also possess solid technical skills in my arsenal.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1>Contact Information:</h1>
+    <br />
+    <div class="contact-container">
+      <div class="contact-inner-container">
+        <p>Name: Alexander Borisov</p>
+        <p>
+          Email:
+          <a class="email" href="mailto:alexander-b@kifl.ac.jp">alexander-b@kifl.ac.jp</a>
+        </p>
+        <p>Phone: 080-1258-1690</p>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="footer-container">
+      <div class="footer-inner-container">
+        <p class="footer-name">Created by Alexander Borisov</p>
+        <a class="footer-logo" href="https://github.com/syzygyexe" target="_blank">
+          <img alt="GitHub" src="img/github.png" width="20" height="20">
+        </a>
+        <a class="footer-logo" href="https://www.linkedin.com/in/alexander-borisov-305507201" target="_blank" />
+        <img alt="Linkedin" src="img/linkedin.png" width="20" height="20">
+        </a>
+        <a class="footer-logo" href="https://stackoverflow.com/users/13871107/alexander-borisov" target="_blank">
+          <img alt="Stackoverflow" src="img/stackoverflow.png" width="20" height="20">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JQuery CDN -->
+  <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- Local JS -->
+  <script src="js/main.js"></script>
+</body>
+
+
+</html>
+<!--       _
+  .__(.)< (MEOW)
+   \___)   
+~~~~~~~~~~~~~~~~~~-->

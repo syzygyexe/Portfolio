@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+li {
+  list-style: none;
+}
+/* Utility Classes */
+.text-primary {
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 1rem;
+  background: #ffff66;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ffff33;
+}
+
+/* Navbar */
+.navbar {
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+/* TODO: Hot-Fix navbar width for PC */
+@media only screen and (min-width: 769px) {
+  .navbar-inner-container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  width: 108px;
+  padding-bottom: 0.25rem;
+}
+
+.brand-fix {
+  display: block;
+  color: white;
+  height: 100%;
+}
+
+.brand-fix:hover {
+  color: #e5e5e5;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  display: block;
+}
+.navbar-links li a:hover {
+  background-color: #393939;
+  border-radius: 5px;
+}
+
+.logo-nav {
+  float: right;
+  margin-left: 0.25rem;
+  margin-top: 0.145rem;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black url("../img/background-showcase.jpg") no-repeat center
+    center/cover;
+}
+#showcase-container {
+  width: 1200px;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+/* Project section */
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: black url("../img/background-project-fixed.jpg") no-repeat center
+    center/cover;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.project-container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project-inner-container {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.project-image {
+  height: 370px;
+  width: 520px;
+}
+
+.technology-container {
+  width: 552px;
+  height: 120px;
+}
+.project-technologies-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info-title {
+  margin-bottom: 1rem;
+}
+.project-info {
+  display: flex;
+  text-align: start;
+  width: 520px;
+  height: auto;
+  margin: 1rem;
+}
+
+.project-info-list {
+  height: 400px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 520px;
+  margin: 1rem;
+}
+
+.project-button {
+  background: #ffff66;
+  width: 140px;
+  height: 50px;
+  flex-direction: row;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #ffff66;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.project-button:hover {
+  background: #ffff33;
+}
+
+/* References */
+#references {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background: black url("../img/background-references.jpg") no-repeat center
+    center/cover;
+}
+.references-container {
+  width: 1200px;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.references-title {
+  margin-top: 1rem;
+}
+
+.references-inner-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  height: 350px;
+  width: 390px;
+  border-radius: 10px;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.reference-name {
+  display: flex;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reference-position {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+}
+
+.reference-contact {
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+}
+
+.reference-button {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #393939;
+  color: #fff;
+  width: 140px;
+  height: 50px;
+  flex-direction: row;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.reference-button:hover {
+  background: #444444;
+}
+
+/* About */
+#about {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background: rgb(65, 65, 65);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(65, 65, 65, 1) 50%,
+    rgba(15, 15, 15, 1) 100%
+  );
+}
+
+.about-container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-inner-container {
+  width: 600px;
+}
+
+.about-me {
+  font-size: 17px;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background: rgb(65, 65, 65);
+  background: linear-gradient(
+    900deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(65, 65, 65, 1) 100%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1200px;
+}
+
+.contact-inner-container {
+  width: 300px;
+}
+
+.email {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: black;
+  height: 60px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 1200px;
+  height: 50px;
+}
+
+.footer-inner-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+}
+
+.footer-name {
+  margin: 0;
+}
+
+.footer-logo {
+  margin-left: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+/* Carousel */
+
+/* Slideshow container */
+.slideshow-container,
+.slideshow-containerRight {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides,
+.mySlidesRight {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next,
+.prevRight,
+.nextRight {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev,
+.prevRight {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next,
+.nextRight {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover,
+.prevRight:hover,
+.nextRight:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text,
+.textRight {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext,
+.numbertextRight {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot,
+.dotRight {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.activeRight,
+.dot:hover,
+.dotRight:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade, fadeRight;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade, fadeRight;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
