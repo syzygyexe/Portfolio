@@ -1,4 +1,4 @@
-app.use(express.static(path.join(__dirname, "app/js")));
+app.use(express.static(path.join(__dirname, "./js")));
 // ++++++++++++++++++++++++++++ TRANSPARENT NAV BACKGROUND +++++++++++++++++++
 window.addEventListener("scroll", function () {
   if (window.scrollY > 150) {
